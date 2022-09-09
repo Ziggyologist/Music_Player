@@ -1,5 +1,9 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap");
+:root {
+  --primary-color: #3dad9f;
+  --secondary-color: #bd24b8;
+}
 html {
   box-sizing: border-box;
 }
@@ -7,11 +11,15 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #c9ced3;
+  /* background: #c9ced3; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "League Spartan", sans-serif;
+  background-image: url("./img/custom_bkg-01.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-size: 12px;
 }
 
@@ -26,7 +34,7 @@ img {
 .player-container {
   min-height: 600px;
   min-width: 400px;
-  background: #d2d7db;
+  background: #d5d5d7c0;
   border-radius: 20px;
   box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.3);
 }
@@ -64,11 +72,10 @@ h3 {
 }
 
 .progress {
-  background: #242323;
+  background: #4d0334;
   border-radius: 5px;
   height: 100%;
-  /* change this to show progress */
-  width: 66%;
+  width: 0;
   transition: width 0.1s linear;
 }
 
@@ -91,12 +98,22 @@ h3 {
   font-size: 30px;
   color: rgb(129, 129, 129);
   margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
 }
 
 .main-button {
   font-size: 40px;
   position: relative;
   top: 3px;
+  color: #a562a3;
+}
+.main-button:hover {
+  color: #bd24b8;
 }
 
 /* Media Query: iPhone (Vertical) */
