@@ -116,6 +116,35 @@ h3 {
   color: #bd24b8;
 }
 
+#expand {
+  display: block;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  font-size: 3rem;
+}
+#question {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+/* Extra buttons */
+.extra-tab {
+  border-top: dotted rgba(255, 255, 255, 0.63) 2px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.extra-tab i {
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 400px) {
   h2 {
